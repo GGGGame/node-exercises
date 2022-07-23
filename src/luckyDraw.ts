@@ -12,12 +12,18 @@ function luckyDraw(player: string) {
   });
 }
 
-luckyDraw("Joe")
-  .then((value) => console.log(value))
-  .catch((error) => console.log(error));
-luckyDraw("Caroline")
-  .then((value) => console.log(value))
-  .catch((error) => console.log(error));
-luckyDraw("Sabrina")
-  .then((value) => console.log(value))
-  .catch((error) => console.log(error));
+const getResults = async () => {
+  try {
+    const playerArray = ["Tina", "Jorge", "Julien"];
+
+    playerArray.forEach(async (players) => {
+      const player = await luckyDraw(players);
+
+      console.log(player);
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+getResults();
