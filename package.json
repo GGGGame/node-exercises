@@ -1,5 +1,28 @@
 {
   "dependencies": {
-    "figlet": "^1.5.2"
+    "@types/node": "^18.0.6",
+    "figlet": "^1.5.2",
+    "typescript": "^4.7.4"
+  },
+  "name": "exercises",
+  "description": "Node exercises",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GGGGame/node-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GGGGame/node-exercises/issues"
+  },
+  "homepage": "https://github.com/GGGGame/node-exercises#readme",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3"
   }
 }
